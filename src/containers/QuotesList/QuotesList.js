@@ -64,7 +64,7 @@ export default class Quotes extends Component {
 						id={quote.id}
 					/>
 				))}
-				<Lines customLoading={this.state.loading} />;
+				<Lines customLoading={this.state.loading} />
 			</div>
 		);
 	}
