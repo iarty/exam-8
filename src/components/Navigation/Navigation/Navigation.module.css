@@ -1,0 +1,56 @@
+.Navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  max-width: 300px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  background: rgb(138, 250, 215);
+  transform: translateX(0px);
+  transition: transform .22s ease-in;
+  z-index: 90;
+}
+
+.Navigation.close {
+  transform: translateX(-300px);
+}
+
+.Navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Navigation ul li {
+  margin-bottom: 15px;
+}
+
+.Navigation ul li a {
+  color: #424242;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: rgb(138, 250, 215);
+  position: relative;
+  padding: 0 20px 10px 20px;
+  transition: opacity .3s;
+}
+
+.Navigation ul li a:hover {
+  opacity: .5;
+}
+
+.Navigation ul li a.active {
+  color: #4285f4;
+}
+
+.Navigation ul li a.active::before {
+  content: '> '
+}
+
+.quote{
+text-align: center;
+color:rgb(117, 117, 117);
+font-size: 40px;
+}

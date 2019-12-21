@@ -1,0 +1,19 @@
+.MenuToggler {
+    position: fixed;
+    top: 60px;
+    left: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(77, 75, 75);
+    transition: opacity, left .22s ease-in;
+    z-index: 100;
+}
+
+.MenuToggler:hover {
+    opacity: .7;
+}
+
+.MenuToggler.open {
+    left: 320px;
+    color: #fff;
+}
