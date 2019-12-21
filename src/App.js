@@ -13,6 +13,10 @@ export default function App() {
 				<div className='d-flex justify-content-center'>
 					<Switch>
 						<Route path='/newQuotes' component={QuoteDataForm}></Route>
+						<Route
+							path='/quotes/:id/edit'
+							render={props => <QuoteDataForm {...props} title='Edit quote' btn='Edit' />}
+						></Route>
 						<Route path='/quotes/:name' component={QuotesList}></Route>
 						<Route path={"/" || "/quotes"} component={QuotesList} exact></Route>
 						<Route
