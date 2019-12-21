@@ -5,6 +5,7 @@ import EditBtn from "../UI/EditBtn/EditBtn";
 import axios from "../../axios/axios";
 import Close from "../UI/Close/Close";
 
+
 export default class QuotesItem extends Component {
 	quoteRemove = async () => {
 		await axios.delete(`/quotes/${this.props.id}.json`);

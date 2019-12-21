@@ -9,7 +9,8 @@ export default class Quotes extends Component {
 		loading: true
 	};
 
-	async componentDidUpdate(prevProps) {
+	async componentDidUpdate(prevProps, prevState) {
+		!prevState.loading && this.setState({ loading: true });
 		if (
 			this.props.match.params.name &&
 			prevProps.match.params.name !== this.props.match.params.name
